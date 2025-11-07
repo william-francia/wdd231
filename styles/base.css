@@ -1,37 +1,42 @@
 :root {
     --primary-color: rgb(197, 183, 129);
     --secondary-color: #386150ff;
-    --accent1-color: #58b09cff;
+    --accent1-color: rgb(173, 207, 173);
     --accent2-color: #3d3522ff;
     --heading-font: "Poetsen One", sans-serif;
     --body-font: "Montserrat", sans-serif;
 }
-header{
+
+header {
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 10px;
     border-bottom: solid 1px;
+    font-size: 8px;
+    font-family: var(--heading-font);
 }
+
 header div {
-  text-align: center;
-  padding: 10px;
-  display: flex;
-  align-items: center;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
+
 .tittlewilliam {
-    padding-left: 40px;
+    padding-left: 20px;
     color: rgb(205, 241, 216)
 }
 
 
 /*********** hamburger **********************/
 
-.hamburgermenu{
+.hamburgermenu {
     border: none;
     background-color: var(--secondary-color);
     cursor: pointer;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .hamburgermenu::after {
@@ -40,7 +45,7 @@ header div {
 
 .hamburgermenu.show::before {
     content: "\00D7";
-    
+
 }
 
 
@@ -51,19 +56,106 @@ header div {
     display: none;
 
 }
+
 .navigation.show {
     display: block;
 }
 
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
+.navigation a {
+    display: block;
+    padding: 10px;
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    text-decoration: none;
+    border-bottom: solid 1px white;
+}
 
-footer{
+.navigation a:hover {
     background-color: var(--secondary-color);
-    padding: 100px;
+}
+
+
+
+
+
+/* of this part it gonna be the main*/
+
+main h1 {
+    padding-left: 15px;
+    font-family: var(--heading-font);
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    max-width: 100%;
+    background-color: var(--accent1-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.studentphoto img {
+    max-width: 250px;
+    max-height: auto;
+    border-radius: 10px;
+}
+
+.studentphoto img:hover {
+    transform: scale(1.04);
+}
+
+.studentphoto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+main section h2 {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    font-family: var(--heading-font);
+    font-size: 18px;
+}
+
+
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 50px;
     text-align: center;
     color: white;
 
 }
-footer{
-    
+
+.footer2 {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer2 a {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer2 a img:hover {
+    transform: scale(1.09);
 }

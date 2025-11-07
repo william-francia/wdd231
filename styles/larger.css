@@ -7,13 +7,18 @@
         margin: 0 auto;
     }
 
+    header{
+        font-size: 15px;
+        border-bottom: none;
+    }
+
     .hamburgermenu {
         display: none;
     }
 
     .navigation {
         display: block;
-        background-color: var(--primary-color);
+        background-color: var(--accent1-color);
     }
 
     .navigation ul {
@@ -24,17 +29,25 @@
         justify-content: center;
     }
 
-    .navigation ul li {
-        padding: 1rem;
-    }
 
     .navigation ul li a {
         text-decoration: none;
         color: white;
-        font-size: 22px;
-        padding-left: 80px;
+        font-size: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-bottom: none;
     }
 
 
+    .maindivtwo {
+        display: flex;
+        justify-content: center;
+    }
+    .maindivtwo section {
+        padding: 20px;
+        max-width: 800px;
+    }
 
+    
 }
