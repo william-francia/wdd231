@@ -43,7 +43,7 @@
   <main>
     <h1>Home</h1>
     <div class="maindivtwo">
-    <section>
+      <section>
         <h2>About me</h2>
         <p>My name is William Benjamin Francia Poma, and I am from Bolivia. I am 22 years old and have been happily
           married to my wife, Melisa Huanca, for six months. I am a member of The Church of Jesus Christ of Latter-day
@@ -51,24 +51,27 @@
           strong desire to learn and grow every day. I enjoy improving my skills, gaining new knowledge, and facing
           challenges that help me become a better version of myself. I believe that with effort, faith, and
           perseverance, I can achieve my goals and make a positive difference in the lives of others.</p>
-    </section>
+      </section>
 
-    <section class="studentphoto">
-      <h2>Student Photo</h2>
-      <img src="images/about-me.webp" alt="My wife and me">
-    </section>
+      <section class="studentphoto">
+        <h2>Student Photo</h2>
+        <img src="images/about-me.webp" alt="My wife and me">
+      </section>
     </div>
 
-    <section>
-      <h2>Web Certificate Courses</h2>
-      <div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
+    <section id="certificates">
+      <h2>My Courses</h2>
+
+      <div class="filter-buttons">
+        <button id="all">All</button>
+        <button id="wdd">WDD</button>
+        <button id="cse">CSE</button>
       </div>
+      <p>The total number of course listed below is 10</p>
+
+      <div id="course-container" class="course-grid"></div>
     </section>
+
   </main>
 
 
@@ -91,7 +94,7 @@
     </div>
     <p>&copy; <span id="currentyear"></span> William Benjamin Francia Poma - Bolivia</p>
     <p id="lastModified"></p>
-    
+
   </footer>
 </body>
 
