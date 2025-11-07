@@ -1,0 +1,69 @@
+:root {
+    --primary-color: rgb(197, 183, 129);
+    --secondary-color: #386150ff;
+    --accent1-color: #58b09cff;
+    --accent2-color: #3d3522ff;
+    --heading-font: "Poetsen One", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+}
+header{
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 10px;
+    border-bottom: solid 1px;
+}
+header div {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.tittlewilliam {
+    padding-left: 40px;
+    color: rgb(205, 241, 216)
+}
+
+
+/*********** hamburger **********************/
+
+.hamburgermenu{
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+
+.hamburgermenu::after {
+    content: "\2630";
+}
+
+.hamburgermenu.show::before {
+    content: "\00D7";
+    
+}
+
+
+/*********** hamburger **********************/
+
+
+.navigation {
+    display: none;
+
+}
+.navigation.show {
+    display: block;
+}
+
+
+
+footer{
+    background-color: var(--secondary-color);
+    padding: 100px;
+    text-align: center;
+    color: white;
+
+}
+footer{
+
+}

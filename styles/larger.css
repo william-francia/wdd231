@@ -1,0 +1,40 @@
+@media screen and (min-width: 600px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        margin: 0 auto;
+    }
+
+    .hamburgermenu {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        background-color: var(--primary-color);
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .navigation ul li {
+        padding: 1rem;
+    }
+
+    .navigation ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        padding-left: 80px;
+    }
+
+
+
+}
