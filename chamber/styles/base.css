@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #383938;
+    --secondary-color: #CBD4C2;
+    --primary1-color: #FFFCFF;
+    --secundary2-color: #347434;
+    --optional-color: #C3B299;
+
+    --heading-font: "Poetsen One", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    background-color: var(--primary2-color);
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+header img {
+    display: block;
+    width: 40px;
+    padding-top: 7px;
+}
+
+header h1 {
+    font-size: 15px;
+    padding-left: 8px;
+    padding-top: 10px;
+}
+
+/******* hamburger menu*****************/
+.hamburgerclassmenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.hamburgerclassmenu::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburgerclassmenu.show::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
+
+
+
+/******************navigation********************/
+.navclassmenu {
+    display: none;
+}
+
+.navclassmenu.show {
+    display: block;
+}
+
+.navclassmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navclassmenu ul li {
+    padding: 12px;
+    border-bottom: solid 1px var(--secundary2-color);
+    text-align: center;
+}
+
+.navclassmenu ul a {
+    color: var(--primary-color);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.navclassmenu ul a:hover {
+    background-color: var(--secundary2-color);
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    padding: 0.5rem 2rem;
+}
+
+
+
+main {
+    padding: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    font-family: var(--body-font);
+    font-size: 12px;
+}
+
+.footer2 {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer2 a {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer2 a img:hover {
+    transform: scale(1.09);
+}

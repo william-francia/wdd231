@@ -8,20 +8,72 @@
     <meta name="description"
         content="This going to be a page which you can access to our content if you are a business man.">
     <link rel="icon" href="images/favicon.ico">
-    
+
     <meta property="og:title" content="Cámara de Comercio de La Paz" />
-    <meta property="og:description" content="Conecta con empresas locales, descubre eventos y oportunidades de crecimiento económico en La Paz." />
-    <meta property="og:image" content="https://tusitio.github.io/images/og-image.jpg" />
-    <meta property="og:url" content="https://tusitio.github.io/directory.html" />
+    <meta property="og:description"
+        content="Conecta con empresas locales, descubre eventos y oportunidades de crecimiento económico en La Paz." />
+    <meta property="og:image" content="images/facebookog.webp" />
+    <meta property="og:url" content="https://william-francia.github.io/wdd231/chamber/directory.html" />
 
-
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <title>William Francia Poma | Chamber, directory</title>
 
 </head>
 
-<body>
 
+<body>
+    <header>
+        <div class="logopage">
+            <img src="images/pngegg.png" alt="The logo of the page" width="50px">
+        </div>
+        <div class="titleheader">
+            <h1>Cámara de Emprendimiento Empresarial</h1>
+        </div>
+        <button id="hamburgeridmenu" class="hamburgerclassmenu"></button>
+
+    </header>
+
+    <nav id="navidmenu" class="navclassmenu">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <main></main>
+    <footer>
+        <div class="footernew">
+            <h3>Cámara de Emprendimiento Empresarial</h3>
+            <p>Bella Vista, Barrio municipal Calle 4 #29A, La Paz Bolivia</p>
+            <p>CamaraCEE@gmail.com</p>
+            <p>+591 63257097</p>
+        </div>
+        <div class="footer2">
+            <nav class="socialmedia">
+                <a class="facebook" href="https://www.facebook.com/?locale=es_LA">
+                    <img src="images/app_facebook_logo.png" alt="facebook" width="35" height="35">
+                </a>
+                <a class="linkedin" href="www.linkedin.com/in/william-benjamin-francia-poma-8281a231a">
+                    <img src="images/linkedin.png" alt="instagram" width="35" height="35">
+                </a>
+                <a class="whatsapp" href="https://www.whatsapp.com/?lang=es_LA">
+                    <img src="images/whatsapp.png" alt="whatsapp" width="35" height="35">
+                </a>
+            </nav>
+        </div>
+        <p>&copy; <span id="currentyear"></span> William Benjamin Francia Poma - Bolivia</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="script/dates.js" defer></script>
+    <script src="script/navigation.js" defer></script>
 </body>
 
 </html>
