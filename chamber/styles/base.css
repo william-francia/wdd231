@@ -91,9 +91,62 @@ header h1 {
 
 
 
-main {
-    padding: 100px;
+/* ====== Estilo base para pantallas pequeñas (min-width: 320px) ====== */
+.view-toggle {
+  text-align: center;
+  margin: 1rem 0;
 }
+
+.view-toggle button {
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #2b6777;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-toggle button:hover {
+  background-color: #1e4f5d;
+}
+
+/* --- Estilo por defecto (grid) --- */
+.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* --- Vista en lista --- */
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+
+
+
 
 
 
@@ -109,7 +162,7 @@ footer {
     background-color: var(--secondary-color);
     padding: 50px 20px;
     text-align: center;
-    color: white;
+    color: var(--primary-color);
     font-family: var(--body-font);
     font-size: 12px;
 }
@@ -117,15 +170,18 @@ footer {
 .footer2 {
     padding: 20px;
     text-align: center;
-    color: white;
+    color: var(--primary-color);
 }
 
 .footer2 a {
     padding: 10px;
     text-align: center;
-    color: white;
+    color: var(--primary-color);
 }
 
 .footer2 a img:hover {
     transform: scale(1.09);
+}
+.footernew {
+    color: var(--primary-color);
 }

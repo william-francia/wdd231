@@ -1,53 +1,90 @@
 @media only screen and (min-width: 38rem) {
 
-header {
-    padding: 20px;
-    grid-template-columns: 40px auto;
-}
-header img {
-    display: block;
-    width: 50px;
-    padding-top: 7px;
-}
-header h1 {
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 21px;
-}
-.hamburgerclassmenu {
-    display: none;
-}
-.navclassmenu {
-    display: block;
-    background-color: var(--secondary-color);
-}
+    header {
+        padding: 20px;
+        grid-template-columns: 40px auto;
+    }
+
+    header img {
+        display: block;
+        width: 50px;
+        padding-top: 7px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 21px;
+    }
+
+    .hamburgerclassmenu {
+        display: none;
+    }
+
+    .navclassmenu {
+        display: block;
+        background-color: var(--secondary-color);
+    }
 
 
 
-.navclassmenu ul {
-    display: flex;
-    list-style: none;
-    padding: 10px;
-    justify-content: center;
-}
-.navclassmenu ul li {
-    padding-left: 50px;
-    padding-right: 50px;
-    border-bottom: none;
-}
+    .navclassmenu ul {
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        justify-content: center;
+    }
 
-.navclassmenu ul a {
-    color: var(--primary-color);
-    font-size: 15px;
-    text-decoration: none;
-} 
-.navclassmenu ul a:hover {
-  background-color: var(--secundary2-color);
-  color: white;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
-  padding: 0.5rem 2rem;
-}
+    .navclassmenu ul li {
+        padding-left: 50px;
+        padding-right: 50px;
+        border-bottom: none;
+    }
+
+    .navclassmenu ul a {
+        color: var(--primary-color);
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .navclassmenu ul a:hover {
+        background-color: var(--secundary2-color);
+        color: white;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
+        padding: 0.5rem 2rem;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+      .grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .member-card {
+    text-align: left;
+  }
+
+  .member-card img {
+    max-width: 120px;
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .view-toggle button {
+    font-size: 1rem;
+  }
 
 
 }
@@ -58,6 +95,11 @@ header h1 {
 @media only screen and (min-width: 376px) {
     header h1 {
         padding-top: 17px;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 750px) {
+    footer {
+        display: block;
     }
 
 }

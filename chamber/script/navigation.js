@@ -8,4 +8,20 @@ navbuttom.addEventListener('click', () => {
 });
 
 
+const gridBtn = document.querySelector("#gridBtn");
+const listBtn = document.querySelector("#listBtn");
+const members = document.querySelector("#members");
+
+gridBtn.addEventListener("click", () => {
+  members.classList.add("grid-view");
+  members.classList.remove("list-view");
+});
+
+listBtn.addEventListener("click", () => {
+  members.classList.add("list-view");
+  members.classList.remove("grid-view");
+});
+
+
+
 
