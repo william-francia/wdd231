@@ -12,11 +12,18 @@
     <meta property="og:title" content="Cámara de Comercio de La Paz" />
     <meta property="og:description"
         content="Conecta con empresas locales, descubre eventos y oportunidades de crecimiento económico en La Paz." />
-    <meta property="og:image" content="images/facebookog.webp" />
+    <meta property="og:image" content="https://william-francia.github.io/wdd231/chamber/images/facebookog.webp" />
     <meta property="og:url" content="https://william-francia.github.io/wdd231/chamber/directory.html" />
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
 
     <title>William Francia Poma | Chamber, directory</title>
 
@@ -44,57 +51,14 @@
         </ul>
     </nav>
 
-
-
-
     <main>
-  <section class="view-toggle">
-    <button id="gridBtn">🟦 Grid View</button>
-    <button id="listBtn">📋 List View</button>
-  </section>
+        <section class="view-toggle">
+            <button id="gridBtn">🟦 Grid View</button>
+            <button id="listBtn">📋 List View</button>
+        </section>
 
-  <section id="members" class="grid-view">
-    <div class="member-card">
-      <img src="images/empresa1.webp" alt="Logo Empresa 1">
-      <h3>Consultora Andina</h3>
-      <p>Asesoría legal y contable para pymes paceñas.</p>
-      <p><a href="https://consultoraandina.bo" target="_blank">Visitar sitio</a></p>
-    </div>
-
-    <div class="member-card">
-      <img src="images/empresa2.webp" alt="Logo Empresa 2">
-      <h3>Artesanías del Sol</h3>
-      <p>Productos hechos a mano por artesanos locales.</p>
-      <p><a href="https://artesaniasdelsol.bo" target="_blank">Visitar sitio</a></p>
-    </div>
-
-    <div class="member-card">
-      <img src="images/empresa3.webp" alt="Logo Empresa 3">
-      <h3>Café Illimani</h3>
-      <p>Café orgánico producido en los Yungas de La Paz.</p>
-      <p><a href="https://cafeillimani.bo" target="_blank">Visitar sitio</a></p>
-    </div>
-
-    <div class="member-card">
-      <img src="images/empresa4.webp" alt="Logo Empresa 4">
-      <h3>EcoTrans La Paz</h3>
-      <p>Transporte sostenible y ecológico dentro de la ciudad.</p>
-      <p><a href="https://ecotranslapaz.bo" target="_blank">Visitar sitio</a></p>
-    </div>
-  </section>
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
+        <section id="members" class="grid-view"></section>
+    </main>
 
     <footer>
         <div class="footernew">
@@ -117,13 +81,14 @@
             </nav>
         </div>
         <div>
-        <p>&copy; <span id="currentyear"></span> William Benjamin Francia Poma - Bolivia</p>
-        <p id="lastModified"></p>
+            <p>&copy; <span id="currentyear"></span> William Benjamin Francia Poma - Bolivia</p>
+            <p id="lastModified"></p>
         </div>
 
     </footer>
     <script src="script/dates.js" defer></script>
     <script src="script/navigation.js" defer></script>
+    <script src="script/directory" defer></script>
 </body>
 
 </html>

@@ -67,26 +67,6 @@
 
 
 
-
-      .grid-view {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .member-card {
-    text-align: left;
-  }
-
-  .member-card img {
-    max-width: 120px;
-    float: left;
-    margin-right: 1rem;
-  }
-
-  .view-toggle button {
-    font-size: 1rem;
-  }
-
-
 }
 
 

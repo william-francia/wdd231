@@ -1,0 +1,74 @@
+[
+    {
+        "names": "William Francia",
+        "addresses": "Calle 4, #29A, Barrio Municipal, La Paz Bolivia",
+        "phone numbers": "+591 63257097",
+        "website URLs": "https://william-francia.github.io/wdd231/chamber/directory.html",
+        "image or icon file names": "images/pngegg.png",
+        "membership_level": 3,
+        "description": "Consultoría independiente en desarrollo web y soporte tecnológico para pequeñas empresas, gerente de esta empresa de camara de empresarios."
+    },
+    {
+        "names": "Café Illimani",
+        "addresses": "Av. Mariscal Santa Cruz #1025, La Paz, Bolivia",
+        "phone numbers": "+591 76543210",
+        "website URLs": "https://cafeillimani.bo",
+        "image or icon file names": "",
+        "membership_level": 2,
+        "description": "Cafetería local que promueve el café orgánico paceño y brinda espacios para reuniones de emprendedores."
+    },
+    {
+        "names": "EcoTrans La Paz",
+        "addresses": "Zona Sopocachi, Calle Rosendo Gutiérrez #88, La Paz, Bolivia",
+        "phone numbers": "+591 71234567",
+        "website URLs": "https://ecotranslapaz.bo",
+        "image or icon file names": "",
+        "membership_level": 1,
+        "description": "Servicio de transporte ecológico y sostenible enfocado en movilidad limpia dentro de la ciudad de La Paz."
+    },
+    {
+        "names": "Artesanías del Sol",
+        "addresses": "Mercado de las Brujas, Calle Linares #120, La Paz, Bolivia",
+        "phone numbers": "+591 70123456",
+        "website URLs": "https://artesaniasdelsol.bo",
+        "image or icon file names": "",
+        "membership_level": 2,
+        "description": "Emprendimiento que ofrece artesanías bolivianas hechas a mano, apoyando a mujeres artesanas paceñas."
+    },
+    {
+        "names": "Consultora Andina",
+        "addresses": "Av. 6 de Agosto #2300, Edificio Andino, Piso 3, La Paz, Bolivia",
+        "phone numbers": "+591 78945612",
+        "website URLs": "https://consultoraandina.bo",
+        "image or icon file names": "",
+        "membership_level": 3,
+        "description": "Empresa consultora que brinda asesoramiento a pequeñas empresas en finanzas y gestión empresarial."
+    },
+    {
+        "names": "Sabores Paceños",
+        "addresses": "Calle Comercio #315, La Paz, Bolivia",
+        "phone numbers": "+591 74561289",
+        "website URLs": "https://saborespacenos.bo",
+        "image or icon file names": "",
+        "membership_level": 1,
+        "description": "Pequeño restaurante familiar que rescata la comida típica paceña con un toque moderno."
+    },
+    {
+        "names": "TechInnovar Bolivia",
+        "addresses": "Zona Miraflores, Calle Villalobos #456, La Paz, Bolivia",
+        "phone numbers": "+591 78781234",
+        "website URLs": "https://techinnovar.bo",
+        "image or icon file names": "",
+        "membership_level": 3,
+        "description": "Startup de tecnología especializada en soluciones digitales y capacitación en herramientas web."
+    },
+    {
+        "names": "Moda Andina",
+        "addresses": "Calle Sagárnaga #210, La Paz, Bolivia",
+        "phone numbers": "+591 72233445",
+        "website URLs": "https://modaandina.bo",
+        "image or icon file names": "",
+        "membership_level": 2,
+        "description": "Emprendimiento textil que combina diseño moderno con tejidos tradicionales de los Andes bolivianos."
+    }
+]
