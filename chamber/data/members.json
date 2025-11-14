@@ -31,7 +31,7 @@
         "addresses": "Mercado de las Brujas, Calle Linares #120, La Paz, Bolivia",
         "phone numbers": "+591 70123456",
         "website URLs": "https://artesaniasdelsol.bo",
-        "image or icon file names": "images/artesanalsol.jpeg",
+        "image or icon file names": "images/artesanalsol.png",
         "membership_level": 2,
         "description": "Emprendimiento que ofrece artesanías bolivianas hechas a mano, apoyando a mujeres artesanas paceñas."
     },
@@ -40,7 +40,7 @@
         "addresses": "Av. 6 de Agosto #2300, Edificio Andino, Piso 3, La Paz, Bolivia",
         "phone numbers": "+591 78945612",
         "website URLs": "https://consultoraandina.bo",
-        "image or icon file names": "images/andina.jpeg",
+        "image or icon file names": "images/andina.jpg",
         "membership_level": 3,
         "description": "Empresa consultora que brinda asesoramiento a pequeñas empresas en finanzas y gestión empresarial."
     },
@@ -67,7 +67,7 @@
         "addresses": "Calle Sagárnaga #210, La Paz, Bolivia",
         "phone numbers": "+591 72233445",
         "website URLs": "https://modaandina.bo",
-        "image or icon file names": "images/modandina.jpeg",
+        "image or icon file names": "images/modandina.png",
         "membership_level": 2,
         "description": "Emprendimiento textil que combina diseño moderno con tejidos tradicionales de los Andes bolivianos."
     }
