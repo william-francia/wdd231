@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="William Benjamin Francia Poma">
     <meta name="description"
-        content="This going to be a page which you can access to our content if you are a business man.">
+        content="This is the home part, This going to be a page which you can access to our content if you are a business man.">
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Cámara de Comercio de La Paz" />
@@ -25,7 +25,7 @@
         rel="stylesheet">
 
 
-    <title>William Francia Poma | Chamber, directory</title>
+    <title>Home | Index</title>
 
 </head>
 
@@ -54,18 +54,50 @@
 
 
 
-    <main class="members-section">
-        <section class="view-toggle" aria-label="Cambiar vista">
-            <button id="gridBtn" class="active" type="button">🟦 Grid View</button>
-            <button id="listBtn" type="button">📋 List View</button>
+    <main>
+        <section class="imghero">
+            <img src="images/Camaradecomercion.webp" alt="This is in one imagen the goal of the company">
+            <div class="hero-content">
+                <h1>Welcome to the Chamber of Commerce</h1>
+                <a class="cta-button" href="join.html">Join the Chamber</a>
+            </div>
         </section>
 
-        <section id="members" class="grid-view" aria-live="polite"></section>
+
+
+        <section class="events">
+            <h2>Current Events</h2>
+            <ul>
+                <li>
+                    <h3>Business Networking Night</h3>
+                    <p>Connect with local entrepreneurs and organizations.</p>
+                </li>
+                <li>
+                    <h3>Community Growth Forum</h3>
+                    <p>Discuss development plans and opportunities.</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- WEATHER SECTION -->
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div class="card">
+                <h2 id="town"></h2>
+                <img id="graphic" src="" lt="Weather icon">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </div>
+        </section>
+
+
+        <!-- BUSINESS HIGHLIGHTS SECTION -->
+        <section class="highlights">
+            <h2>Business Highlights</h2>
+        </section>
+
     </main>
-
-
-
-
 
 
     <footer>
@@ -94,8 +126,9 @@
         </div>
     </footer>
 
-<script src="scripts/dates.js" defer></script>
-<script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/temperature.js" defer></script>
 </body>
 
 </html>
