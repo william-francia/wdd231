@@ -123,9 +123,6 @@
 }
 
 
-
-
-
 /* Weather Forecast Section */
 .weather-forecast {
     max-width: 600px;
@@ -171,11 +168,13 @@
 }
 
 
-
 /*business Highlights*/
 .highlights h2 {
     text-align: center;
     padding: 30px;
+}
+.highlights {
+    text-align: center;
 }
 
 .spotlight-card {
@@ -211,7 +210,7 @@
   display: inline-block;
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #0077cc;
+  background-color: var(--secundary2-color);
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -220,6 +219,27 @@
 .spotlight-card .visit:hover {
   background-color: #005fa3;
 }
+
+
+
+
+
+
+
+
+/*from now on is for larges screens*/
+@media only screen and (min-width: 38rem) {
+    .imghero img{
+        width: 800px;
+    }
+
+
+}
+
+
+
+
+
 
 
 
