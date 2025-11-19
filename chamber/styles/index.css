@@ -230,10 +230,50 @@
 /*from now on is for larges screens*/
 @media only screen and (min-width: 38rem) {
     .imghero img{
-        width: 800px;
+        width: 750px;
+        position: relative;
     }
+    .cta-button{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 150px;
+    }
+    .divweather {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        margin: 50px;
+    }
+    .hero-content {
+        font-size: 20px;
+    }
+    .events {
+        padding-top: 60px;
+    }
+    .highlights {
+        margin-bottom: 50px;
+    }
+}
 
-
+@media only screen and (min-width: 490px) and (max-width: 850px) {
+    .imghero img{
+        width: 500px;
+        position: relative;
+    }
+        .cta-button{
+        position: absolute;
+        right: 0;
+        margin: 10px;
+    }
+        .events {
+        margin-top: 50px;
+    }
+        .divweather {
+        display: block;
+    }
+        .highlights {
+        margin-bottom: 50px;
+    }
 }
 
 
