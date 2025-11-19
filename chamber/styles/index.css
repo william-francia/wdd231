@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #383938;
+    --secondary-color: #CBD4C2;
+    --primary1-color: #FFFCFF;
+    --secundary2-color: #347434;
+    --optional-color: #C3B299;
+
+    --heading-font: "Poetsen One", sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+.imghero{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+    font-size: 10px;
+}
+.cta-button {
+    display: inline-block;
+    display: flex;
+    justify-content: end;
+    padding: 1rem 2rem;
+    margin: 15px;
+    background-color: var(--secundary2-color);
+    font-family: var(--heading-font);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.events {
+    padding: 1rem;
+}
+
+.events h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.events ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.events li {
+    margin-bottom: 1rem;
+}
+
+.events li h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.events li p {
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.weather {
+    padding: 1rem;
+}
+
+.weather h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* thisis for the weather*/
+.weather .card {
+    background-color: var(--secondary-color); 
+    border: 1px solid #c9e6ff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#town {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--secundary2-color);
+}
+
+#graphic {
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+#description {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+}
+#temperature {
+    font-size: 2rem;
+
+}
+
+
+
+
+
+/* Weather Forecast Section */
+.weather-forecast {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.weather-forecast h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.forecast-card {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-card .day {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.forecast-card .temp {
+    font-size: 1.2em;
+    color: #ff6600;
+}
+
+
+
+/*business Highlights*/
+.highlights h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.spotlight-card {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  vertical-align: top;
+  text-align: center;
+}
+
+.spotlight-card .logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.spotlight-card .member-info h3 {
+  margin: 10px 0 5px;
+}
+
+.spotlight-card .member-info .desc {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.spotlight-card .visit {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.spotlight-card .visit:hover {
+  background-color: #005fa3;
+}
+
+
+
+
+
