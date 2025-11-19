@@ -26,12 +26,16 @@
         rel="stylesheet">
 
 
-    <title>Home | Index</title>
+    <title>Home</title>
 
 </head>
 
 
 <body>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/temperature.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <header>
         <div class="logopage">
             <img src="images/pngegg.png" alt="The logo of the page" width="40">
@@ -57,57 +61,57 @@
 
     <main class="mainindex">
         <section class="imghero">
-            <img src="images/Camaradecomercion.webp" alt="This is in one imagen the goal of the company" width="300">
+            <img src="images/camaradecomercion.webp" alt="This is in one imagen the goal of the company" width="300">
             <div class="hero-content">
-                <h1>Welcome to the Chamber of Commerce</h1>
+                <h2>Welcome to the Chamber of Commerce</h2>
                 <a class="cta-button" href="join.html">Join the Chamber</a>
             </div>
         </section>
 
 
         <div class="divweather">
-        <section class="events">
-            <h2>Current Events</h2>
-            <ul>
-                <li>
-                    <h3>Business Networking Night</h3>
-                    <p>Connect with local entrepreneurs and organizations.</p>
-                </li>
-                <li>
-                    <h3>Community Growth Forum</h3>
-                    <p>Discuss development plans and opportunities.</p>
-                </li>
-            </ul>
-        </section>
+            <section class="events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>
+                        <h3>Business Networking Night</h3>
+                        <p>Connect with local entrepreneurs and organizations.</p>
+                    </li>
+                    <li>
+                        <h3>Community Growth Forum</h3>
+                        <p>Discuss development plans and opportunities.</p>
+                    </li>
+                </ul>
+            </section>
 
 
-        <!-- WEATHER SECTION -->
-        <section class="weather">
-            <h2>Current Weather</h2>
-            <div class="card">
-                <h2 id="town"></h2>
-                <img id="graphic" src="#" alt="This is the WEATHER imagen">
-                <p id="description"></p>
-                <p id="temperature"></p>
-            </div>
-        </section>
+            <!-- WEATHER SECTION -->
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <div class="card">
+                    <h2 id="town"></h2>
+                    <img id="graphic" src="#" alt="This is the WEATHER imagen">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+            </section>
 
 
-        <section class="weather-forecast">
-            <h2>Weather Forecast</h2>
-            <div class="forecast-card" id="forecast-today">
-                <p class="day">Today</p>
-                <p class="temp" id="temp-today"></p>
-            </div>
-            <div class="forecast-card" id="forecast-day2">
-                <p class="day" id="day2-name"></p>
-                <p class="temp" id="temp-day2"></p>
-            </div>
-            <div class="forecast-card" id="forecast-day3">
-                <p class="day" id="day3-name"></p>
-                <p class="temp" id="temp-day3"></p>
-            </div>
-        </section>
+            <section class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-card" id="forecast-today">
+                    <p class="day">Today</p>
+                    <p class="temp" id="temp-today"></p>
+                </div>
+                <div class="forecast-card" id="forecast-day2">
+                    <p class="day" id="day2-name"></p>
+                    <p class="temp" id="temp-day2"></p>
+                </div>
+                <div class="forecast-card" id="forecast-day3">
+                    <p class="day" id="day3-name"></p>
+                    <p class="temp" id="temp-day3"></p>
+                </div>
+            </section>
         </div>
 
 
@@ -145,10 +149,7 @@
         </div>
     </footer>
 
-    <script src="scripts/dates.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/temperature.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+
 </body>
 
 </html>

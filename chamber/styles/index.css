@@ -19,7 +19,6 @@
     font-size: 10px;
 }
 .cta-button {
-    display: inline-block;
     display: flex;
     justify-content: end;
     padding: 1rem 2rem;
@@ -170,7 +169,6 @@
 
 /*business Highlights*/
 .highlights h2 {
-    text-align: center;
     padding: 30px;
 }
 .highlights {
@@ -275,13 +273,3 @@
         margin-bottom: 50px;
     }
 }
-
-
-
-
-
-
-
-
-
-
