@@ -27,7 +27,7 @@ textarea {
 
 input[type="submit"] {
     cursor: pointer;
-    font-size: 0.7rem;
+    font-size: 1rem;
     background-color: #0061a8;
     color: white;
     border: none;
@@ -39,10 +39,10 @@ input[type="submit"]:hover {
     background-color: #004d82;
 }
 
-
-
-
-
+.membershiptitle {
+    font-size: 1rem;
+    color: var(--secundary2-color);
+}
 
 
 
@@ -53,6 +53,8 @@ input[type="submit"]:hover {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards;
+    font-size: 10px;
+    padding-bottom: 30px;
 }
 
 .card {
@@ -93,10 +95,7 @@ input[type="submit"]:hover {
 }
 
 /* Modales */
-.membership-cards {
-    font-size: 10px;
-    padding-bottom: 30px;
-}
+
 .modal {
     display: none;
     position: fixed;
@@ -129,8 +128,13 @@ input[type="submit"]:hover {
         margin-top: 0;
         align-self: start;
     }
+
     form {
         font-size: 20px;
+    }
+
+    .membershiptitle {
+        font-size: 1.5rem;
     }
 
     main {
@@ -139,9 +143,12 @@ input[type="submit"]:hover {
         gap: 2rem;
         padding: 50px 80px;
     }
+
     .membership-cards {
-    font-size: 16px;
-    padding-bottom: 30px;
+        font-size: 16px;
+        padding-bottom: 30px;
+        padding-top: 80px;
+
     }
 
     input,
@@ -154,11 +161,12 @@ input[type="submit"]:hover {
 
 
 
-.budyclass{
+.budyclass {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
 #results {
     background-color: antiquewhite;
     padding: 50px;
