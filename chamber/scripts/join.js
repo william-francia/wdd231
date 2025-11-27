@@ -21,7 +21,6 @@
 
   // ==================== MODALES ====================
   function initModals() {
-    // Abrir modal
     document.querySelectorAll('[data-modal]').forEach(link => {
       link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -31,14 +30,12 @@
       });
     });
 
-    // Cerrar modal al presionar X
     document.querySelectorAll('.modal .close').forEach(btn => {
       btn.addEventListener('click', function () {
         this.closest('.modal').style.display = "none";
       });
     });
 
-    // Cerrar modal al hacer clic afuera
     window.addEventListener('click', function (e) {
       if (e.target.classList.contains('modal')) {
         e.target.style.display = "none";
