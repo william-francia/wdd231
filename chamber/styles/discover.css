@@ -128,17 +128,17 @@ main {
         object-fit: cover;
         grid-area: photograph;
         border-radius: 15px 150px;
-        transition: 
+        transition:
             border-radius 1.5s ease,
             transform 1.5s ease,
             box-shadow 1.5s ease;
-}
+    }
 
-.item-card img:hover {
-    border-radius: 10px 10px; /* forma al pasar el mouse */
-    transform: scale(1.03);      /* crece un poco */
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* opcional */
-}
+    .item-card img:hover {
+        border-radius: 10px 10px;
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
 
     .item-card h2 {
         font-size: 1.2rem;
@@ -160,6 +160,7 @@ main {
         grid-area: learnmore;
         width: 100%;
     }
+
     .learn-more p {
         text-align: center;
     }
@@ -175,6 +176,9 @@ main {
     #items-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+    }
+    main {
+    padding: 3rem 8rem;
     }
 
     .item-card {
@@ -194,24 +198,24 @@ main {
         height: 200px;
         object-fit: cover;
         border-radius: 15px 150px;
-        transition: 
+        transition:
             border-radius 1.5s ease,
             transform 1.5s ease,
             box-shadow 1.5s ease;
-}
+    }
 
-.item-card img:hover {
-    border-radius: 10px 10px; /* forma al pasar el mouse */
-    transform: scale(1.03);      /* crece un poco */
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* opcional */
-}
+    .item-card img:hover {
+        border-radius: 10px 10px;
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
 
     .item-card h2 {
         font-size: 1.2rem;
         text-align: left;
     }
 
-    .item-card address, 
+    .item-card address,
     .item-card p {
         text-align: left;
     }
