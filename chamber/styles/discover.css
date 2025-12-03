@@ -1,0 +1,219 @@
+main {
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: rgba(230, 240, 255, 0.4);
+}
+
+
+#items-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.item-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "location"
+        "learnmore";
+    gap: 0.75rem;
+}
+
+.item-card h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #222;
+    text-align: center;
+    grid-area: name;
+}
+
+.item-card figure {
+    margin: 0;
+    width: 100%;
+    grid-area: photograph;
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    border-radius: 15px 15px;
+}
+
+
+.item-card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #444;
+    text-align: center;
+    grid-area: location;
+}
+
+.item-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333;
+    grid-area: description;
+}
+
+.learn-more {
+    background-color: #0077ff;
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: 0.2s ease;
+    grid-area: learnmore;
+}
+
+.learn-more:hover {
+    background-color: #005fcc;
+}
+
+
+.visit-row {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.visit-label {
+    width: 160px;
+    font-weight: bold;
+    color: navy;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #items-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .item-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name name"
+            "photograph description"
+            "photograph location"
+            "learnmore learnmore";
+        padding: 1rem;
+        border-radius: 14px;
+        align-items: start;
+        gap: 0.75rem;
+    }
+
+    .item-card img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        grid-area: photograph;
+        border-radius: 15px 150px;
+        transition: 
+            border-radius 1.5s ease,
+            transform 1.5s ease,
+            box-shadow 1.5s ease;
+}
+
+.item-card img:hover {
+    border-radius: 10px 10px; /* forma al pasar el mouse */
+    transform: scale(1.03);      /* crece un poco */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* opcional */
+}
+
+    .item-card h2 {
+        font-size: 1.2rem;
+        text-align: left;
+        grid-area: name;
+    }
+
+    .item-card p {
+        grid-area: description;
+        text-align: left;
+    }
+
+    .item-card address {
+        grid-area: location;
+        text-align: left;
+    }
+
+    .learn-more {
+        grid-area: learnmore;
+        width: 100%;
+    }
+    .learn-more p {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+    #items-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .item-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name name"
+            "photograph description"
+            "photograph location"
+            "learnmore learnmore";
+        padding: 1rem;
+        border-radius: 14px;
+        align-items: start;
+    }
+
+    .item-card img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 150px;
+        transition: 
+            border-radius 1.5s ease,
+            transform 1.5s ease,
+            box-shadow 1.5s ease;
+}
+
+.item-card img:hover {
+    border-radius: 10px 10px; /* forma al pasar el mouse */
+    transform: scale(1.03);      /* crece un poco */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* opcional */
+}
+
+    .item-card h2 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .item-card address, 
+    .item-card p {
+        text-align: left;
+    }
+
+}
