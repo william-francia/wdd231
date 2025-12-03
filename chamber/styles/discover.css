@@ -3,9 +3,8 @@ main {
     padding: 1.5rem;
     box-sizing: border-box;
     margin: 0 auto;
-    background-color: rgba(230, 240, 255, 0.4);
+    background-color: rgb(241, 253, 239);
 }
-
 
 #items-container {
     display: grid;
@@ -14,7 +13,7 @@ main {
 }
 
 .item-card {
-    background: #ffffff;
+    background: var(--primary1-color);
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -31,7 +30,7 @@ main {
 .item-card h2 {
     font-size: 1.25rem;
     margin: 0;
-    color: #222;
+    color: var(--primary-color);
     text-align: center;
     grid-area: name;
 }
@@ -45,16 +44,14 @@ main {
 .item-card img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    display: block;
     border-radius: 15px 15px;
+    display: block;
 }
-
 
 .item-card address {
     font-style: normal;
     font-size: 0.9rem;
-    color: #444;
+    color: var(--primary-color);
     text-align: center;
     grid-area: location;
 }
@@ -62,13 +59,13 @@ main {
 .item-card p {
     font-size: 0.9rem;
     line-height: 1.4;
-    color: #333;
+    color: var(--primary-color);
     grid-area: description;
 }
 
 .learn-more {
-    background-color: #0077ff;
-    color: white;
+    background-color: var(--secundary2-color);
+    color: var(--primary1-color);
     padding: 0.7rem 1rem;
     border: none;
     width: 100%;
@@ -81,9 +78,8 @@ main {
 }
 
 .learn-more:hover {
-    background-color: #005fcc;
+    background-color: var(--primary-color);
 }
-
 
 .visit-row {
     padding: 2rem 0;
@@ -94,13 +90,11 @@ main {
 .visit-label {
     width: 160px;
     font-weight: bold;
-    color: navy;
+    color: var(--primary-color);
     text-align: right;
     margin-right: 10px;
     font-size: 18px;
 }
-
-
 
 @media (min-width: 641px) and (max-width: 1024px) {
     #items-container {
@@ -144,16 +138,19 @@ main {
         font-size: 1.2rem;
         text-align: left;
         grid-area: name;
+        color: var(--primary-color);
     }
 
     .item-card p {
         grid-area: description;
         text-align: left;
+        color: var(--primary-color);
     }
 
     .item-card address {
         grid-area: location;
         text-align: left;
+        color: var(--primary-color);
     }
 
     .learn-more {
@@ -166,19 +163,14 @@ main {
     }
 }
 
-
-
-
-
-
-
 @media (min-width: 1025px) {
     #items-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
+
     main {
-    padding: 3rem 8rem;
+        padding: 3rem 8rem;
     }
 
     .item-card {
@@ -213,11 +205,12 @@ main {
     .item-card h2 {
         font-size: 1.2rem;
         text-align: left;
+        color: var(--primary-color);
     }
 
     .item-card address,
     .item-card p {
         text-align: left;
+        color: var(--primary-color);
     }
-
 }
