@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #383938;
+    --secondary-color: #CBD4C2;
+    --primary1-color: #FFFCFF;
+    --secundary2-color: #f80606;
+    --optional-color: #19bd1b;
+
+    --heading-font: "Poetsen One", sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 110px auto 30px;
+    background-color: var(--primary2-color);
+    padding: 10px;
+    margin-top: 3px;
+    border-bottom: 2px solid #ccc;
+}
+
+.titlenauvoo {
+    font-size: 7px;
+    padding-top: 16px;
+}
+
+.imgheader img {
+    height: 45px;
+}
+
+/******************menu*********************/
+.hamburgerclassmenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 5px;
+    color: var(--primary-color);
+}
+
+.hamburgerclassmenu::before {
+    content: "\2630";
+    font-size: 25px;
+    text-align: center;
+}
+
+.hamburgerclassmenu.show::before {
+    content: "\00D7";
+    font-size: 32px;
+}
+
+.navclassmenu ul {
+    text-align: center;
+    list-style: none;
+
+}
+
+.navclassmenu ul li {
+    padding: 8px;
+    background-color: var(--secundary2-color);
+    margin: 5px 80px;
+    border-radius: 15px;
+    text-align: center;
+
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform-origin: center;
+}
+
+.navclassmenu ul li:hover {
+    transform: scale(1.2);
+    background-color: var(--secundary2-light-color);
+}
+
+.navclassmenu ul a {
+    color: var(--primary-color);
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    font-family: var(--body-font);
+    font-weight: 700;
+    
+}
+
+
+
+.navclassmenu {
+    display: none;
+}
+
+.navclassmenu.show {
+    display: block;
+}
+
+
+
+
+footer {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: #f2f2f2;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 3px solid var(--secundary2-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Columna 1: Información */
+footer .footernew h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--secundary2-color);
+}
+
+footer .footernew p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/**************** Redes Sociales *********************/
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.socialmedia a img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(1) invert(1); 
+    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0.3;
+}
+
+.socialmedia a img:hover {
+    transform: scale(1.25);
+    opacity: 1;
+    filter: brightness(1) saturate(1.3); 
+}
+
+footer div:last-child p {
+    margin: 5px 0;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    footer {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 600px) {
+
+    header {
+        grid-template-columns: 160px auto 40px;
+    }
+
+    .titlenauvoo {
+        font-size: 12px;
+        padding-top: 13px;
+    }
+
+    .imgheader img {
+        height: 55px;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 990px) {
+    .hamburgerclassmenu {
+        display: none;
+    }
+
+    .navclassmenu {
+        display: block;
+    }
+
+
+    .navclassmenu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .navclassmenu ul li {
+        padding: 12px 60px;
+        margin: 15px;
+        background-color: white;
+        transition: transform 0.2s ease;
+        transform-origin: center;
+        border-radius: 5px 50px;
+    }
+
+    .navclassmenu ul li:hover {
+        transform: scale(1.2);
+        animation: flashColor 0.8s ease forwards;
+    }
+
+    /* Animación del color */
+    @keyframes flashColor {
+        0% {
+            background-color: var(--secundary2-color);
+        }
+
+        20% {
+            background-color: var(--secundary2-color);
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
+    .navclassmenu ul a {
+        font-size: 15px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 200px auto 40px;
+        background-color: var(--primary2-color);
+        padding: 10px;
+    }
+
+    .titlenauvoo {
+        font-size: 15px;
+        padding-top: 18px;
+    }
+
+    .imgheader img {
+        height: 70px;
+        padding-left: 20px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
