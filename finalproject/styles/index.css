@@ -8,7 +8,7 @@
 .img1main img {
     width: 100%;
     height: auto;
-    opacity: 0;            
+    opacity: 0;                
     animation: fadeInSmooth 1.5s ease forwards;
 }
 @keyframes fadeInSmooth {
@@ -127,75 +127,92 @@
 
 
 
+/**************** TARJETAS DE EMPRESAS  ***************/
 
 
 
-/* Contenedor */
+
 .companiesworkwithclass {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    font-family: var(--heading-font);
 }
 
-/* Grid de tarjetas */
-.companiesworkwithclass {
+.empresasproveedoras {
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid var(--secundary2-color);
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+#companiesworkwithid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    font-family: var(--body-font);
 }
 
-/* Tarjeta */
 .company-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: var(--primary1-color);
+    padding: 25px;
+    border-radius: 18px;
     text-align: center;
-    transition: transform 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: .25s ease;
 }
 
-/* Hover */
 .company-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
 }
 
-/* Imagen */
 .company-card img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
-/* Título */
 .company-card h3 {
     margin: 10px 0;
-    color: var(--primary2-color);
+    font-size: 1.25rem;
+    color: var(--primary-color);
 }
 
-/* Descripción */
-.company-card p {
-    font-size: 14px;
-    color: #333;
+.company-card .country {
+    font-size: .9rem;
+    color: #777;
+    font-style: italic;
 }
 
-/* Botón */
+.company-card .desc {
+    margin: 10px 0 15px;
+    color: #444;
+}
+
 .company-card a {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background-color: var(--secundary2-color);
-    color: white;
-    text-decoration: none;
+    padding: 10px 18px;
+    background: var(--secundary2-color);
+    color: #fff;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background .2s;
 }
 
 .company-card a:hover {
-    background-color: var(--primary2-color);
+    background: #b80505;
 }
-
-
-
 
 
 
@@ -262,4 +279,10 @@ main button {
 }
 
 
+.empresasproveedoras {
+    padding: 50px 100px;
+}
+.divtittlempresas { 
+    text-align: center;
+}
 }

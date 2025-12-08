@@ -1,0 +1,297 @@
+.img1main picture,
+.img1main,
+.img1main img {
+    width: 100%;
+    display: block;
+}
+
+.img1main img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: fadeInSmooth 1.5s ease forwards;
+}
+
+@keyframes fadeInSmooth {
+    0% {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/***************** form *************/
+
+
+form {
+    max-width: 360px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: var(--body-font, Arial, sans-serif);
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.membershiptitle {
+    text-align: center;
+    color: var(--primary-color, #333);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: .9rem;
+    margin-top: 5px;
+}
+
+textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background: var(--secundary2-color, #d60707);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background .3s;
+}
+
+input[type="submit"]:hover {
+    background: #b80505;
+}
+
+
+
+
+/*************** PRODUCTOS ***************/
+.best-products {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.bp-title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.bp-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #444;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.btn-view {
+    margin-top: 1rem;
+    padding: .6rem 1.2rem;
+    background: #005bbb;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-view:hover {
+    background: #004999;
+}
+
+
+/****************** MODALES ***************/
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 16px;
+    position: relative;
+    animation: fadeIn .3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-text {
+    margin-top: 1rem;
+}
+
+.modal-list {
+    margin-top: 1rem;
+    padding-left: 1.3rem;
+}
+
+.modal-list li {
+    margin-bottom: .5rem;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.contact-us-section {
+    max-width: 300px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.contact-us-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.contact-us-section p {
+    margin: 0.5rem 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 610px) {
+    form {
+        max-width: 450px;
+        padding: 35px;
+        gap: 1rem;
+        margin-top: 50px;
+        width: 500px;
+    }
+
+    .membershiptitle {
+        font-size: 1.4rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    textarea {
+        min-height: 90px;
+    }
+
+    input[type="submit"] {
+        padding: 12px;
+        font-size: 1.05rem;
+    }
+
+    .divformcontact {
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    .contactanos3img {
+        position: fixed;
+        /* hace que el elemento se quede fijo en la pantalla */
+        top: 15px;
+        right: 20px;
+        z-index: 999;
+        /* para que esté por encima de otros elementos */
+        display: block;
+    }
+
+    .contactanos3img img {
+        display: block;
+        width: auto;
+        height: 70px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .contactanos3img img:hover {
+        transform: scale(1.3);
+        /* efecto al pasar el mouse */
+    }
+
+
+}

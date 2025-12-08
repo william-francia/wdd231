@@ -60,7 +60,6 @@
     <main>
         <form method="get" action="thankyou.html">
 
-            <!-- First Name -->
              <h2 class="membershiptitle">Membership Application Form</h2>
             <label>
                 First Name:
@@ -68,14 +67,12 @@
                     autocomplete="given-name">
             </label>
 
-            <!-- Last Name -->
             <label>
                 Last Name:
                 <input type="text" id="lastName" name="lastName" required title="Enter your last name"
                     autocomplete="family-name">
             </label>
 
-            <!-- Organizational Title -->
             <label>
                 Organizational Title:
                 <input type="text" id="orgTitle" name="orgTitle"
@@ -83,28 +80,24 @@
                     pattern="[A-Za-z\-\\s]{7,}">
             </label>
 
-            <!-- Email -->
             <label>
                 Email:
                 <br><input type="email" id="email" name="email" required title="Enter a valid email address"
                     autocomplete="email" placeholder="example@email.com">
             </label>
 
-            <!-- Phone -->
             <label>
                 Mobile Phone:
                 <input type="tel" id="phone" name="phone" required title="Enter your mobile phone number"
                     autocomplete="tel">
             </label>
 
-            <!-- Organization Name -->
             <label>
                 Organization Name:
                 <input type="text" id="organization" name="organization" required title="Enter your organization name"
                     autocomplete="organization">
             </label>
 
-            <!-- Membership Level -->
             <label>
                 Membership Level:
                 <select name="membership" id="membership" required title="Select a membership level">
@@ -116,16 +109,13 @@
                 </select>
             </label>
 
-            <!-- Organization Description -->
             <label>
                 Business / Organization Description:
                 <textarea id="description" name="description" title="Describe your business or organization"></textarea>
             </label>
 
-            <!-- Timestamp -->
             <input type="hidden" id="timestamp" name="timestamp">
 
-            <!-- Submit Button -->
             <input type="submit" value="BECOME A MEMBER">
 
         </form>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="William Benjamin Francia Poma">
+    <meta name="description"
+        content="In this page you can find a little about our business and know this company and how to contact us here is a form so you can send us a message to Navoo">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Navoo Hardware Imports" />
+    <meta property="og:description"
+        content="Ferretería e importaciones en La Paz, Bolivia. Ofrecemos herramientas, materiales de construcción y productos especializados de alta calidad para hogares y empresas." />
+    <meta property="og:image" content="https://william-francia.github.io/wdd231/finalproject/images/logonauvoo.webp" />
+    <meta property="og:url" content="https://william-francia.github.io/wdd231/finalproject/index.html" />
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contactus.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/contactus.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Navoo Hardware Imports | Contact Us</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="imgheader">
+            <img src="images/logonauvoo.webp" alt="This is the logo of the company" height="70">
+        </div>
+        <div class="titlenauvoo">
+            <h1>HARDWARE IMPORTS</h1>
+        </div>
+        <div>
+            <button id="hamburgeridmenu" class="hamburgerclassmenu"></button>
+        </div>
+    </header>
+
+
+    <nav id="navidmenu" class="navclassmenu">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Sucursales</a></li>
+            <li><a href="contactus.html">Contactanos</a></li>
+            <li><a href="https://drive.google.com/file/d/1GCuE3K3toRsD3WHC9N9lvShDELbs3eON/view?usp=sharing">Nuestros
+                    Productos</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+    <main>
+        <picture class="img1main">
+            <source class="large-img" srcset="images/contactanos2.2.webp" media="(min-width: 800px)">
+            <img src="images/contactanos2.webp" alt="Como contactarnos">
+        </picture>
+
+
+
+
+
+        <div class="divformcontact">
+            <form method="get" action="thankyou.html">
+
+                <h2 class="membershiptitle">Consultas / Contacto</h2>
+
+                <label>
+                    Full Name:
+                    <input type="text" id="firstName" name="firstName" required title="Enter your full name"
+                        autocomplete="name">
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required title="Enter your mobile phone number"
+                        autocomplete="tel">
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email"
+                        placeholder="example@email.com">
+                </label>
+
+                <label>
+                    Client Type:
+                    <select name="membership" id="membership" required title="Select a client type">
+                        <option value="">-- Select Client Type --</option>
+                        <option value="empresa">Empresa (por mayor)</option>
+                        <option value="persona">Persona particular</option>
+                    </select>
+                </label>
+
+                <label>
+                    Comments:
+                    <textarea id="description" name="description" title="Additional comments"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="CONTACT US">
+
+            </form>
+
+
+            <div class="contact-us-section">
+                <p class="contact-us-intro">
+                    ¿Por qué contactarnos? Somos tu mejor opción porque ofrecemos productos de alta calidad,
+                    atención personalizada y asesoramiento experto. ¡Queremos ayudarte a encontrar exactamente lo que
+                    necesitas!
+                </p>
+
+                <div class="contact-us-image">
+                    <img src="images/contactanos1.png" alt="Contactanos de manera correcta">
+                </div>
+
+                <div class="contact-us-info">
+                    <p class="contact-phone">
+                        Llámanos: <a href="tel:+59172556965">+591 72556965</a>
+                    </p>
+                    <p class="contact-email">
+                        Escríbenos: <a href="mailto:nauvooimportadoras@gmail.com">nauvooimportadoras@gmail.com</a>
+                    </p>
+                    <p class="contact-message">
+                        También puedes llenar nuestro formulario de contacto y responderemos a la brevedad.
+                        ¡Estamos aquí para ayudarte y asesorarte en todo momento!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <section class="best-products">
+            <h2 class="bp-title">Productos Más Vendidos</h2>
+            <p class="bp-description">
+                Estos productos son de excelente calidad y en Bolivia somos los importadores
+                oficiales que los venden al mejor precio, con variedad y cantidad según su necesidad.
+            </p>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="images/brocacobal.webp" alt="imagen del producto" width="200px">
+                    <h3>Brocas Nauvoo (Taiwán)</h3>
+                    <p>Alta duración y precisión profesional.</p>
+                    <button class="btn-view" data-modal="modal-producto1">Ver más del producto</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/tarugosx.webp" alt="imagen del producto" width="200px">
+                    <h3>Tarugos Fischer SX</h3>
+                    <p>Máxima firmeza para todo tipo de fijaciones.</p>
+                    <button class="btn-view" data-modal="modal-producto2">Ver más del producto</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/tarugouxr.webp" alt="imagen del producto" width="200px">
+                    <h3>Tarugos Fischer UXR</h3>
+                    <p>Durabilidad superior para metal y acero.</p>
+                    <button class="btn-view" data-modal="modal-producto3">Ver más del producto</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ============= MODALES ============= -->
+
+        <div class="modal" id="modal-producto1">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Brocas Nauvoo – Fabricadas en Taiwán</h2>
+                <p class="modal-text">
+                    Brocas de alta precisión elaboradas con acero HSS de la mejor calidad,
+                    exclusivas en Bolivia.
+                </p>
+                <ul class="modal-list">
+                    <li>Fabricación taiwanesa premium</li>
+                    <li>Ideales para metal, madera y plástico</li>
+                    <li>Alta vida útil y resistencia térmica</li>
+                    <li>Disponibles en todas las medidas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-producto2">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Tarugos Fischer – Calidad Alemana</h2>
+                <p class="modal-text">
+                    Tarugos profesionales reconocidos mundialmente por su resistencia y seguridad.
+                </p>
+                <ul class="modal-list">
+                    <li>Máxima firmeza en concreto y ladrillo</li>
+                    <li>Diferentes medidas disponibles</li>
+                    <li>Material de alta densidad</li>
+                    <li>Instalación rápida y segura</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-producto3">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Discos de Corte Industrial</h2>
+                <p class="modal-text">
+                    Discos con tecnología anticorrosión y ultra resistencia.
+                </p>
+                <ul class="modal-list">
+                    <li>Para acero inoxidable, metal y hierro</li>
+                    <li>Corte rápido y preciso</li>
+                    <li>Material reforzado</li>
+                    <li>Disponibles en 4”, 7” y 9”</li>
+                </ul>
+            </div>
+        </div>
+        <a class="contactanos3img" href="https://www.whatsapp.com/?lang=es_LA">
+            <img src="images/contactanos3.webp" alt="nuestro whatsapp" height="100px">
+        </a>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footernew">
+            <h3><strong>Nauvoo Hardware Imports</strong></h3><br>
+            <p>Calle Santa Curz, Pasaje del rosario, #2 La Paz Bolivia</p>
+            <p>nauvooimportadoras@gmail.com</p>
+            <p>+591 72556965</p>
+        </div>
+        <div>
+            <p>&copy; <span id="currentyear"></span> William Benjamin Francia Poma |Developer|- Bolivia</p>
+            <p id="lastModified"></p><br>
+            <p>La gran Mision de nuestra empresa sera siempre la sadisfaccion de nuestros clientes</p>
+        </div>
+        <div class="footer2">
+            <nav class="socialmedia">
+                <a class="facebook" href="https://www.facebook.com/?locale=es_LA">
+                    <img src="images/app_facebook_logo.png" alt="facebook" width="35" height="35">
+                </a>
+                <a class="linkedin" href="http://instagram.com/">
+                    <img src="images/instagram_icon.png" alt="instagram" width="35" height="35">
+                </a>
+                <a class="whatsapp" href="https://www.whatsapp.com/?lang=es_LA">
+                    <img src="images/whatsapp.png" alt="whatsapp" width="35" height="35">
+                </a>
+            </nav>
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

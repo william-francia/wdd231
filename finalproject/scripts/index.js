@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("companiesworkwithid");
 
-    fetch("data/companies.json")
+    fetch("data/company.json")
         .then(response => {
             if (!response.ok) {
                 throw new Error("No se pudo cargar el JSON");
@@ -26,6 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             console.error("Error cargando datos:", error);
-            container.innerHTML += "<p>No se pudieron cargar las empresas.</p>";
+            container.innerHTML += `
+        <p style="color:red; font-weight:bold;">
+            ERROR: ${error.message}
+        </p>
+    `;
         });
+
 });
+
+
