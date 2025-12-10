@@ -83,6 +83,12 @@
     border-radius: 10px;
     margin-top: 1rem;
 }
+.visitanos1div {    
+    text-align: center;
+}
+.visitanos1div img{    
+    width: 300px;
+}
 
 @media (min-width: 610px) {
 
@@ -104,5 +110,8 @@
 
     .sucursal iframe {
         height: 300px;
+    }
+    .visitanos1div img{    
+    width: 600px;
     }
 }
